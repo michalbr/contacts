@@ -39,6 +39,10 @@ A simple contact management app built with Ruby on Rails. Contacts can be organi
 ```bash
    rails db:create db:migrate
 ```
+   Optionally, seed the database with sample data:
+```bash
+rails db:seed
+```
 
 5. Start the server
 ```bash
