@@ -1,0 +1,10 @@
+<% if @label.errors.any? %>
+  <%= turbo_stream.replace "modal" do %>
+    <%= render "modal", title: "Edit Label", label: @label %>
+  <% end %>
+<% else %>
+  <%= turbo_stream.update "modal", "" %>
+  <%= turbo_stream.update "labels-list" do %>
+    <%= render @labels %>
+  <% end %>
+<% end %>

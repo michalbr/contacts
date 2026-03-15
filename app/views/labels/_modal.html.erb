@@ -1,0 +1,9 @@
+<turbo-frame id="modal">
+  <div class="fixed inset-0 bg-black/50 flex items-center justify-center"
+    onclick="if(event.target === this) this.closest('turbo-frame').innerHTML = ''">
+    <div class="bg-white rounded-lg p-6 max-w-md w-full">
+      <h2 class="text-xl font-bold mb-4"><%= title %></h2>
+      <%= render "form", label: label %>
+    </div>
+  </div>
+</turbo-frame>

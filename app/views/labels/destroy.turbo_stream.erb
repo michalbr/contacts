@@ -1,0 +1,6 @@
+<%= turbo_stream.replace "confirm_modal_backdrop" do %>
+  <%= render "layouts/confirm_modal" %>
+<% end %>
+<%= turbo_stream.update "labels-list" do %>
+  <%= render @labels %>
+<% end %>

@@ -1,0 +1,6 @@
+<%= turbo_stream.append "toasts" do %>
+  <div data-controller="toast"
+       class="bg-green-500 text-white px-4 py-2 rounded-lg shadow">
+    <%= flash[:notice] %>
+  </div>
+<% end %>

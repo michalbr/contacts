@@ -1,0 +1,15 @@
+<div id="confirm_modal_backdrop"
+     data-action="click->confirm-modal#closeOnBackdrop"
+     data-confirm-modal-target="backdrop"
+     class="hidden fixed inset-0 bg-black/50 flex items-center justify-center">
+  <div class="bg-white rounded-lg p-6 max-w-md w-full" data-action="click->confirm-modal#closeOnBackdrop">
+    <h2 class="text-xl font-bold mb-4">Delete <span data-confirm-modal-target="resource"></span></h2>
+    <p class="text-sm text-gray-600 mb-6">Are you sure you want to delete "<span data-confirm-modal-target="resourceName"></span>"?</p>
+    <div class="flex gap-2">
+      <%= button_to "Delete", "#", method: :delete, data: { confirm_modal_target: "deleteButton" }, 
+          class: "rounded-lg bg-red-600 px-5 py-2 text-sm font-medium text-white hover:bg-red-700 cursor-pointer" %>
+      <%= link_to "Cancel", "#", data: { action: "confirm-modal#close" }, 
+          class: "inline-block rounded-lg border border-gray-300 px-5 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100" %>
+    </div>
+  </div>
+</div>

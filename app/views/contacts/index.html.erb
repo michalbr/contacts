@@ -1,0 +1,11 @@
+<% if @label %>
+  <h1 class="text-3xl font-bold text-gray-900 mt-4 mb-6">
+    <%= @label.name %>
+  </h1>
+<% end %>
+
+<% if @contacts.empty? %>
+  <p>No contacts found.</p>
+<% else %>
+  <%= render @contacts %>
+<% end %>
