@@ -15,6 +15,7 @@ A simple contact management app built with Ruby on Rails. Contacts can be organi
 
 - Ruby 3.4.8
 - PostgreSQL
+- [mise](https://mise.jdx.dev/) (or another Ruby version manager like rbenv or asdf)
 
 ## Setup
 
@@ -22,6 +23,7 @@ A simple contact management app built with Ruby on Rails. Contacts can be organi
 ```bash
    git clone https://github.com/michalbr/contacts.git
    cd contacts
+   mise trust
 ```
 
 2. Install dependencies
@@ -41,7 +43,7 @@ A simple contact management app built with Ruby on Rails. Contacts can be organi
 ```
    Optionally, seed the database with sample data:
 ```bash
-rails db:seed
+   rails db:seed
 ```
 
 5. Start the server
