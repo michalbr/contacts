@@ -10,6 +10,8 @@ A simple contact management app built with Ruby on Rails. Contacts can be organi
 - Hotwire (Turbo Frames, Turbo Streams)
 - Stimulus
 - Tailwind CSS
+- Minitest
+- Capybara
 
 ## Prerequisites
 
